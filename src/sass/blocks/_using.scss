@@ -1,0 +1,40 @@
+.using {
+    height: 830px;
+    padding-top: 120px;
+    &__list {
+        display: grid;
+        height: 270px;
+        grid-template-rows: 1fr 1fr;
+        margin-top: 60px;
+        gap: 13px;
+        &-row {
+            display: grid;
+            grid-template-columns: repeat(4, 270px);
+            gap: 13px;
+        }
+        &-item {
+            border: 1px solid black;
+            height: 270px;
+            padding: 30px 30px;
+
+        }
+        &-icon {
+            height: 65px;
+            margin-bottom: 20px;
+            img {
+                height: 100%;
+            }
+        }
+        &-title {
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 21px;
+            margin-bottom: 20px;
+        }
+        &-descr {
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+        }
+    }
+}
